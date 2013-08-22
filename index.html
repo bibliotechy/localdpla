@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>DPLA gets Local</title>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" /><![endif]-->
@@ -9,30 +9,44 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="http://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.Default.ie.css" /><![endif]-->
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
     <style>
-        #map {width: 100%; height: 600px;}
-        .info {
-            padding: 6px 8px; font: 14px/18px Arial, Helvetica, sans-serif;
-            background: white;
-            background: rgba(255,255,255,0.8);
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-            border-radius: 5px;  }
-        .info h4 {    margin: 0 0 5px;    color: #777;  }
-        .legend {text-align: left;line-height: 18px;    color: #555;}
-        .legend i {width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7;   }
+      #map {width: 100%; height: 600px;}
+      .info {
+        padding: 6px 8px; font: 14px/18px Arial, Helvetica, sans-serif;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;  }
+      .info h4 {    margin: 0 0 5px;    color: #777;  }
+      .legend {text-align: left;line-height: 18px;    color: #555;}
+      .legend i {width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7;   }
 
     </style>
-</head>
-<body>
-<div id="map">
-</div>
-<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
-<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script src="http://leaflet.github.io/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
-<script src="js/map.js"></script>
+  </head>
+  <body>
+    <header class="span8 offset2">
+    <div>
+      <h1>DPLA - State by State - County by County</h1>
+      <p>This map shows how DPLA records represent each stae in the US. Click on a state to see how the DPLA records represent each county in that state. Click on a county to see the first 100 records from the DPLA for that county.</p>
+      <p>This <a href="//github.com/bibliotechy/localdpla" target="_blank">fugly javascript app</a> is a work in progress.<p>
+    </div>
+    </header>
+    <div id="map">
+    </div>
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="http://leaflet.github.io/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+    <script src="js/map.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<script>
+      ga('create', 'UA-33444169-2', 'bibliotechy.github.io');
+      ga('send', 'pageview');
 
-</script>
-</body>
+    </script>
+
+  </body>
 </html>

@@ -204,7 +204,7 @@ var url = dbase + dcounty + djsonp + dkey;
                          doc['sourceResource.spatial.coordinates'][0].split(',');
                     if (cs){
 
-                        popup = "<div><p><img src='"+ doc.object +"' /><a target='_blank' href='" + doc.isShownAt +"'>" +doc['sourceResource.title']+"</a></p><p>from " + doc['provider.name'] +"</p></div>"
+                      popup = "<div><p><img src='"+ doc.object +"' /></p><p><a target='_blank' href='" + doc.isShownAt +"'>" +doc['sourceResource.title']+"</a></p><p>from " + doc['provider.name'] +"</p></div>"
                         marker  = L.marker([cs[0],cs[1]]).bindPopup(popup);
                         markers.addLayer(marker);
 
